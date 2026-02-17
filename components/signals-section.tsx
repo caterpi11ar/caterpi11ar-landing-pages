@@ -9,29 +9,29 @@ gsap.registerPlugin(ScrollTrigger)
 
 const signals = [
   {
-    date: "2025.06.10",
-    title: "Signal Field",
-    note: "New interface paradigm for ambient computing environments.",
+    date: "2026.02",
+    title: "Locusify",
+    note: "Smart travel tool launched — upload photos to auto-generate route maps and highlight vlogs.",
   },
   {
-    date: "2025.05.28",
-    title: "Silent Agent",
-    note: "Orchestration layer for autonomous design systems.",
+    date: "2026.01",
+    title: "Viper",
+    note: "Minimal Viper-inspired TypeScript config library released with Zod and JSON5 support.",
   },
   {
-    date: "2025.05.15",
-    title: "Noir Grid",
-    note: "Typographic system for editorial interfaces.",
+    date: "2025.12",
+    title: "SRI Calculator",
+    note: "Sexual Repression Index Calculator shipped — a professional mental health assessment tool.",
   },
   {
-    date: "2025.04.30",
-    title: "Project Lattice",
-    note: "Structural framework for adaptive layouts.",
+    date: "2025.11",
+    title: "WeChat Chat Gen",
+    note: "Online WeChat chat screenshot generator launched. Realistic and effortless.",
   },
   {
-    date: "2025.04.12",
-    title: "Echo Chamber",
-    note: "Audio-visual synthesis in browser environments.",
+    date: "2025.10",
+    title: "Lark Imagine",
+    note: "Lark/Feishu bot for AI-powered image generation open-sourced on GitHub.",
   },
 ]
 
@@ -135,7 +135,7 @@ export function SignalsSection() {
 
       {/* Section header */}
       <div ref={headerRef} className="mb-16 pr-6 md:pr-12">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">01 / Signals</span>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">01 / Updates</span>
         <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">WHAT&apos;S NEW</h2>
       </div>
 

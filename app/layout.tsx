@@ -18,10 +18,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "SIGNAL — Experimental Creative Studio",
+  title: "CATERPI11AR — Software That Evolves",
   description:
-    "Interface studies in controlled environments. We design systems that behave, not just screens that display.",
-  generator: "v0.app",
+    "Building intelligent software products that adapt, evolve, and deliver real value. From idea to execution, we ship what matters.",
   icons: {
     icon: [
       {

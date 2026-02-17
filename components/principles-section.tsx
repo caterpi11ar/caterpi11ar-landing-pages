@@ -16,37 +16,37 @@ export function PrinciplesSection() {
     {
       number: "01",
       titleParts: [
-        { text: "INTERFACE", highlight: true },
-        { text: " MINIMALISM", highlight: false },
+        { text: "EVOLVE", highlight: true },
+        { text: " CONSTANTLY", highlight: false },
       ],
-      description: "Reduce until only the essential remains. Every element earns its place.",
+      description: "Products never stop improving. Every release is a step forward, never the final form.",
       align: "left",
     },
     {
       number: "02",
       titleParts: [
-        { text: "SYSTEMS", highlight: true },
-        { text: " OVER SCREENS", highlight: false },
+        { text: "SHIP", highlight: true },
+        { text: " WHAT MATTERS", highlight: false },
       ],
-      description: "Design behaviors, not just layouts. Build logic that scales.",
+      description: "Focus on real value over feature count. Solve problems that users actually have.",
       align: "right",
     },
     {
       number: "03",
       titleParts: [
-        { text: "CONTROLLED ", highlight: false },
-        { text: "TENSION", highlight: true },
+        { text: "BUILD ", highlight: false },
+        { text: "TO SCALE", highlight: true },
       ],
-      description: "Balance between restraint and expression. Confidence without excess.",
+      description: "Architecture that grows with demand. From prototype to production without compromise.",
       align: "left",
     },
     {
       number: "04",
       titleParts: [
-        { text: "SIGNAL ", highlight: false },
-        { text: "CLARITY", highlight: true },
+        { text: "OPEN ", highlight: false },
+        { text: "BY DEFAULT", highlight: true },
       ],
-      description: "Communication that cuts through noise. Precision in every interaction.",
+      description: "Transparent processes, open-source foundations. Community-driven evolution.",
       align: "right",
     },
   ]
@@ -94,7 +94,7 @@ export function PrinciplesSection() {
       {/* Section header */}
       <div ref={headerRef} className="mb-24">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">03 / Principles</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">HOW WE WORK</h2>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">OUR PHILOSOPHY</h2>
       </div>
 
       {/* Staggered principles */}

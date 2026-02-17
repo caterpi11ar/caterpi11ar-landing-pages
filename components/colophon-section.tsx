@@ -75,18 +75,18 @@ export function ColophonSection() {
     >
       {/* Section header */}
       <div ref={headerRef} className="mb-16">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">04 / Colophon</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">CREDITS</h2>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">04 / About</span>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">COLOPHON</h2>
       </div>
 
       {/* Multi-column layout */}
       <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-12">
-        {/* Design */}
+        {/* Team */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Design</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Team</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Signal Studio</li>
-            <li className="font-mono text-xs text-foreground/80">Interface Lab</li>
+            <li className="font-mono text-xs text-foreground/80">Caterpi11ar Soft</li>
+            <li className="font-mono text-xs text-foreground/80">Product & Engineering</li>
           </ul>
         </div>
 
@@ -105,8 +105,8 @@ export function ColophonSection() {
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Typography</h4>
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">Bebas Neue</li>
-            <li className="font-mono text-xs text-foreground/80">Inter</li>
-            <li className="font-mono text-xs text-foreground/80">Geist Mono</li>
+            <li className="font-mono text-xs text-foreground/80">IBM Plex Sans</li>
+            <li className="font-mono text-xs text-foreground/80">IBM Plex Mono</li>
           </ul>
         </div>
 
@@ -114,8 +114,8 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Location</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Remote</li>
-            <li className="font-mono text-xs text-foreground/80">Everywhere</li>
+            <li className="font-mono text-xs text-foreground/80">Remote-first</li>
+            <li className="font-mono text-xs text-foreground/80">Global</li>
           </ul>
         </div>
 
@@ -125,7 +125,7 @@ export function ColophonSection() {
           <ul className="space-y-2">
             <li>
               <a
-                href="mailto:hello@signal.studio"
+                href="mailto:hello@caterpi11ar.com"
                 className="font-mono text-xs text-foreground/80 hover:text-accent transition-colors duration-200"
               >
                 Email
@@ -133,10 +133,10 @@ export function ColophonSection() {
             </li>
             <li>
               <a
-                href="#"
+                href="https://github.com/caterpi11ar"
                 className="font-mono text-xs text-foreground/80 hover:text-accent transition-colors duration-200"
               >
-                Twitter/X
+                GitHub
               </a>
             </li>
           </ul>
@@ -146,7 +146,7 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Year</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">2025</li>
+            <li className="font-mono text-xs text-foreground/80">2026</li>
             <li className="font-mono text-xs text-foreground/80">Ongoing</li>
           </ul>
         </div>
@@ -158,9 +158,9 @@ export function ColophonSection() {
         className="mt-24 pt-8 border-t border-border/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
       >
         <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
-          © 2025 Signal. All rights reserved.
+          © 2026 Caterpi11ar. All rights reserved.
         </p>
-        <p className="font-mono text-[10px] text-muted-foreground">Designed with intention. Built with precision.</p>
+        <p className="font-mono text-[10px] text-muted-foreground">Software that evolves. Built to last.</p>
       </div>
     </section>
   )

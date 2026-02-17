@@ -9,40 +9,39 @@ gsap.registerPlugin(ScrollTrigger)
 
 const experiments = [
   {
-    title: "Project Lattice",
-    medium: "Interface Study",
-    description: "Structural framework for adaptive layouts in dynamic content systems.",
+    title: "Locusify",
+    medium: "Smart Travel",
+    description: "Upload photos to auto-generate visual route maps and smooth highlight vlogs.",
     span: "col-span-2 row-span-2",
+    url: "https://locusify.caterpillar-soft.com/",
   },
   {
-    title: "Signal Field",
-    medium: "Agent Orchestration",
-    description: "Autonomous coordination layer for multi-agent environments.",
+    title: "SRI Calculator",
+    medium: "Assessment Tool",
+    description: "Sexual Repression Index Calculator — a professional mental health assessment tool.",
     span: "col-span-1 row-span-1",
+    url: "https://sexual.caterpillar-soft.com/",
   },
   {
-    title: "Silent Agent",
-    medium: "Visual System",
-    description: "Non-intrusive interface patterns for ambient computing.",
+    title: "WeChat Chat Generator",
+    medium: "Utility",
+    description: "Online WeChat chat screenshot generator. Fast, realistic, and easy to use.",
     span: "col-span-1 row-span-2",
+    url: "https://wechat.caterpillar-soft.com/",
   },
   {
-    title: "Noir Grid",
-    medium: "Typography",
-    description: "High-contrast typographic system for editorial interfaces.",
+    title: "Lark Imagine Robot",
+    medium: "AI Bot",
+    description: "Lark/Feishu bot for AI-powered image generation and artistic creation.",
     span: "col-span-1 row-span-1",
+    url: "https://github.com/caterpi11ar/lark-imagine-robot",
   },
   {
-    title: "Echo Chamber",
-    medium: "Audio-Visual",
-    description: "Generative soundscapes mapped to interface interactions.",
+    title: "Viper",
+    medium: "Open Source Library",
+    description: "Minimal Viper-inspired configuration library for TypeScript, built with Zod and JSON5.",
     span: "col-span-2 row-span-1",
-  },
-  {
-    title: "Void Protocol",
-    medium: "Experimental",
-    description: "Negative space as primary interaction medium.",
-    span: "col-span-1 row-span-1",
+    url: "https://viper.caterpillar-soft.com/",
   },
 ]
 
@@ -98,11 +97,11 @@ export function WorkSection() {
       {/* Section header */}
       <div ref={headerRef} className="mb-16 flex items-end justify-between">
         <div>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Experiments</span>
-          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">SELECTED WORK</h2>
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Products</span>
+          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">PRODUCT SUITE</h2>
         </div>
         <p className="hidden md:block max-w-xs font-mono text-xs text-muted-foreground text-right leading-relaxed">
-          Studies across interface design, agent systems, and visual computation.
+          Tools, bots, and libraries — built to solve real problems and ship fast.
         </p>
       </div>
 
@@ -129,6 +128,7 @@ function WorkCard({
     medium: string
     description: string
     span: string
+    url?: string
   }
   index: number
   persistHover?: boolean
@@ -153,6 +153,12 @@ function WorkCard({
 
   const isActive = isHovered || isScrollActive
 
+  const handleClick = () => {
+    if (experiment.url) {
+      window.open(experiment.url, "_blank", "noopener,noreferrer")
+    }
+  }
+
   return (
     <article
       ref={cardRef}
@@ -163,6 +169,7 @@ function WorkCard({
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleClick}
     >
       {/* Background layer */}
       <div
