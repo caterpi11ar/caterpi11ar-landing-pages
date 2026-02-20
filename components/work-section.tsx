@@ -13,21 +13,21 @@ const experiments = [
     medium: "Smart Travel",
     description: "Upload photos to auto-generate visual route maps and smooth highlight vlogs.",
     span: "col-span-2 row-span-2",
-    url: "https://locusify.caterpillar-soft.com/",
+    url: "https://locusify.caterpi11ar.com/",
   },
   {
     title: "SRI Calculator",
     medium: "Assessment Tool",
     description: "Sexual Repression Index Calculator — a professional mental health assessment tool.",
     span: "col-span-1 row-span-1",
-    url: "https://sexual.caterpillar-soft.com/",
+    url: "https://sexual.caterpi11ar.com/",
   },
   {
     title: "WeChat Chat Generator",
     medium: "Utility",
     description: "Online WeChat chat screenshot generator. Fast, realistic, and easy to use.",
     span: "col-span-1 row-span-2",
-    url: "https://wechat.caterpillar-soft.com/",
+    url: "https://wechat.caterpi11ar.com/",
   },
   {
     title: "Lark Imagine Robot",
@@ -41,7 +41,7 @@ const experiments = [
     medium: "Open Source Library",
     description: "Minimal Viper-inspired configuration library for TypeScript, built with Zod and JSON5.",
     span: "col-span-2 row-span-1",
-    url: "https://viper.caterpillar-soft.com/",
+    url: "https://viper.caterpi11ar.com/",
   },
 ]
 

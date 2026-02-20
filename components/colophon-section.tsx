@@ -113,7 +113,7 @@ export function ColophonSection() {
             </li>
             <li>
               <a
-                href="https://github.com/caterpillar-soft"
+                href="https://github.com/caterpi11ar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-xs text-foreground/80 hover:text-accent transition-colors duration-200"
