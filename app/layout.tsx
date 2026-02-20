@@ -19,9 +19,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "CATERPI11AR — Software That Evolves",
+  title: "CATERPI11AR — AI That Evolves",
   description:
-    "Building intelligent software products that adapt, evolve, and deliver real value. From idea to execution, we ship what matters.",
+    "Building intelligent AI products that adapt, evolve, and deliver real value. From idea to execution, we ship what matters.",
   icons: {
     icon: [
       {

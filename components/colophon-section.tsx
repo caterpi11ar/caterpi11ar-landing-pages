@@ -85,7 +85,7 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Team</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Caterpi11ar Soft</li>
+            <li className="font-mono text-xs text-foreground/80">Caterpi11ar AI</li>
             <li className="font-mono text-xs text-foreground/80">Product & Engineering</li>
           </ul>
         </div>
@@ -142,7 +142,7 @@ export function ColophonSection() {
         <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
           © 2026 Caterpi11ar. All rights reserved.
         </p>
-        <p className="font-mono text-[10px] text-muted-foreground">Software that evolves. Built to last.</p>
+        <p className="font-mono text-[10px] text-muted-foreground">AI that evolves. Built to last.</p>
       </div>
     </section>
   )

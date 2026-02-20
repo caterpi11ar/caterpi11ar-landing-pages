@@ -15,7 +15,7 @@ There are no tests configured in this project.
 
 ## Architecture
 
-Single-page marketing/landing site for **Caterpi11ar Soft** built with Next.js 16 App Router and React 19.
+Single-page marketing/landing site for **Caterpi11ar AI** built with Next.js 16 App Router and React 19.
 
 **Page structure** (`app/page.tsx`): One route with five full-screen sections stacked vertically — `HeroSection` → `SignalsSection` → `WorkSection` → `PrinciplesSection` → `ColophonSection`. Navigation is anchor-based (`#hero`, `#signals`, `#work`, `#principles`, `#colophon`). The `SideNav` uses `IntersectionObserver` to track the active section.
 
