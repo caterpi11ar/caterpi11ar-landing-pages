@@ -16,11 +16,11 @@ const experiments = [
     url: "https://locusify.caterpi11ar.com/",
   },
   {
-    title: "SRI Calculator",
-    medium: "Assessment Tool",
-    description: "Sexual Repression Index Calculator — a professional mental health assessment tool.",
+    title: "Viper",
+    medium: "Open Source Library",
+    description: "Minimal Viper-inspired configuration library for TypeScript, built with Zod and JSON5.",
     span: "col-span-1 row-span-1",
-    url: "https://sexual.caterpi11ar.com/",
+    url: "https://viper.caterpi11ar.com/",
   },
   {
     title: "WeChat Chat Generator",
@@ -37,11 +37,11 @@ const experiments = [
     url: "https://github.com/caterpi11ar/lark-imagine-robot",
   },
   {
-    title: "Viper",
-    medium: "Open Source Library",
-    description: "Minimal Viper-inspired configuration library for TypeScript, built with Zod and JSON5.",
+    title: "SRI Calculator",
+    medium: "Assessment Tool",
+    description: "Sexual Repression Index Calculator — a professional mental health assessment tool.",
     span: "col-span-2 row-span-1",
-    url: "https://viper.caterpi11ar.com/",
+    url: "https://sexual.caterpi11ar.com/",
   },
 ]
 
