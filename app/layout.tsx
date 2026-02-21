@@ -23,21 +23,8 @@ export const metadata: Metadata = {
   description:
     "Building intelligent AI products that adapt, evolve, and deliver real value. From idea to execution, we ship what matters.",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/caterpi11ar.jpg",
+    apple: "/caterpi11ar.jpg",
   },
 }
 
