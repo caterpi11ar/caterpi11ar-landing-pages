@@ -55,9 +55,9 @@ export function HeroSection() {
           </div>
         </SplitFlapAudioProvider>
 
-        <h2 className="font-[var(--font-bebas)] text-muted-foreground/60 text-[clamp(1rem,3vw,2rem)] mt-4 tracking-wide">
+        <h1 className="font-[var(--font-bebas)] text-muted-foreground/60 text-[clamp(1rem,3vw,2rem)] mt-4 tracking-wide">
           AI That Evolves
-        </h2>
+        </h1>
 
         <p className="mt-12 max-w-md font-mono text-sm text-muted-foreground leading-relaxed">
           We build tools, bots, and libraries that solve real problems. From travel maps to chat generators to AI bots — shipping fast, evolving always.

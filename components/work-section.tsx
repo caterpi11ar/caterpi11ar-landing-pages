@@ -137,6 +137,7 @@ function WorkCard({
   const cardRef = useRef<HTMLElement>(null)
   const [isScrollActive, setIsScrollActive] = useState(false)
 
+
   useEffect(() => {
     if (!persistHover || !cardRef.current) return
 
@@ -153,24 +154,29 @@ function WorkCard({
 
   const isActive = isHovered || isScrollActive
 
-  const handleClick = () => {
-    if (experiment.url) {
-      window.open(experiment.url, "_blank", "noopener,noreferrer")
-    }
-  }
-
   return (
     <article
       ref={cardRef}
       className={cn(
-        "group relative border border-border/40 p-5 flex flex-col justify-between transition-all duration-500 cursor-pointer overflow-hidden",
+        "group relative border border-border/40 p-5 flex flex-col justify-between transition-all duration-500 overflow-hidden",
         experiment.span,
         isActive && "border-accent/60",
+        experiment.url && "cursor-pointer",
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={handleClick}
     >
+      {/* Accessible link overlay */}
+      {experiment.url && (
+        <a
+          href={experiment.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 z-20"
+          aria-label={`${experiment.title} — ${experiment.description}`}
+        />
+      )}
+
       {/* Background layer */}
       <div
         className={cn(
