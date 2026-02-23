@@ -16,6 +16,13 @@ const experiments = [
     url: "https://locusify.caterpi11ar.com/",
   },
   {
+    title: "Dentic",
+    medium: "Health & Habits",
+    description: "Build a lifelong brushing habit the scientific way.",
+    span: "col-span-1 row-span-1",
+    url: "https://github.com/caterpi11ar/dentic",
+  },
+  {
     title: "Viper",
     medium: "Open Source Library",
     description: "Minimal Viper-inspired configuration library for TypeScript, built with Zod and JSON5.",
