@@ -10,6 +10,11 @@ gsap.registerPlugin(ScrollTrigger)
 const signals = [
   {
     date: "2026.02",
+    title: "Dentic",
+    note: "Habit-building app launched — build a lifelong brushing habit the scientific way.",
+  },
+  {
+    date: "2026.02",
     title: "Locusify",
     note: "Smart travel tool launched — upload photos to auto-generate route maps and highlight vlogs.",
   },
