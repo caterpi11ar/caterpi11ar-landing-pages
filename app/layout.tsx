@@ -52,6 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    alternateLocale: ["zh_CN"],
     url: "https://caterpi11ar.com",
     siteName: "CATERPI11AR",
     title: "CATERPI11AR — AI That Evolves",
@@ -101,12 +102,16 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Caterpi11ar AI",
+              alternateName: "caterpi11ar",
               url: "https://caterpi11ar.com",
               logo: "https://caterpi11ar.com/caterpi11ar.jpg",
               description:
-                "Building intelligent AI products that adapt, evolve, and deliver real value.",
+                "Caterpi11ar AI builds intelligent products that adapt, evolve, and deliver real value — including Locusify (smart travel), Dentic (habit building), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, and SRI Calculator.",
               email: "hello@caterpi11ar.com",
-              sameAs: ["https://github.com/caterpi11ar"],
+              foundingDate: "2025",
+              sameAs: [
+                "https://github.com/caterpi11ar",
+              ],
             }),
           }}
         />
@@ -138,9 +143,10 @@ export default function RootLayout({
                 applicationCategory: "TravelApplication",
                 operatingSystem: "Web",
                 url: "https://locusify.caterpi11ar.com/",
-                description: "Upload photos to auto-generate visual route maps and smooth highlight vlogs.",
+                description: "Locusify is a smart travel tool that lets you upload photos to auto-generate visual route maps and smooth highlight vlogs. It automatically extracts GPS data and timestamps from photos to reconstruct your journey on a map.",
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
                 author: { "@type": "Organization", name: "Caterpi11ar AI" },
+                keywords: "travel route map, photo to map, travel vlog generator, trip visualization",
               },
               {
                 "@context": "https://schema.org",
@@ -149,9 +155,10 @@ export default function RootLayout({
                 applicationCategory: "HealthApplication",
                 operatingSystem: "Web",
                 url: "https://github.com/caterpi11ar/dentic",
-                description: "Build a lifelong brushing habit the scientific way.",
+                description: "Dentic is a habit-building app designed to help users develop a consistent, lifelong brushing routine using scientifically-backed habit formation techniques.",
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
                 author: { "@type": "Organization", name: "Caterpi11ar AI" },
+                keywords: "habit app, brushing habit, dental hygiene, habit tracker",
               },
               {
                 "@context": "https://schema.org",
@@ -160,9 +167,10 @@ export default function RootLayout({
                 applicationCategory: "DeveloperApplication",
                 operatingSystem: "Web",
                 url: "https://viper.caterpi11ar.com/",
-                description: "Minimal Viper-inspired configuration library for TypeScript, built with Zod and JSON5.",
+                description: "Viper is a minimal, Viper-inspired configuration library for TypeScript, built with Zod validation and JSON5 support. It provides type-safe config management for Node.js applications.",
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
                 author: { "@type": "Organization", name: "Caterpi11ar AI" },
+                keywords: "TypeScript config library, Zod config, JSON5, type-safe configuration, Node.js config",
               },
               {
                 "@context": "https://schema.org",
@@ -171,11 +179,103 @@ export default function RootLayout({
                 applicationCategory: "UtilitiesApplication",
                 operatingSystem: "Web",
                 url: "https://wechat.caterpi11ar.com/",
-                description: "Online WeChat chat screenshot generator. Fast, realistic, and easy to use.",
+                description: "WeChat Chat Generator is a free online tool that creates realistic WeChat chat screenshots. Generate custom WeChat conversation screenshots instantly — no app required.",
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
                 author: { "@type": "Organization", name: "Caterpi11ar AI" },
+                keywords: "WeChat chat screenshot generator, fake WeChat chat, WeChat screenshot maker, 微信聊天截图生成器",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                name: "Lark Imagine Robot",
+                applicationCategory: "BusinessApplication",
+                operatingSystem: "Web",
+                url: "https://github.com/caterpi11ar/lark-imagine-robot",
+                description: "Lark Imagine Robot is an open-source Lark (Feishu) bot for AI-powered image generation and artistic creation. Bring AI image generation directly into your Lark workspace.",
+                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+                author: { "@type": "Organization", name: "Caterpi11ar AI" },
+                keywords: "Lark bot, Feishu bot, AI image generation, 飞书机器人, AI绘图",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                name: "SRI Calculator",
+                applicationCategory: "HealthApplication",
+                operatingSystem: "Web",
+                url: "https://sexual.caterpi11ar.com/",
+                description: "SRI Calculator (Sexual Repression Index Calculator) is a professional mental health assessment tool for measuring and evaluating sexual repression levels.",
+                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+                author: { "@type": "Organization", name: "Caterpi11ar AI" },
+                keywords: "SRI calculator, sexual repression index, mental health assessment tool",
               },
             ]),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "What is Caterpi11ar AI?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, and SRI Calculator.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What is Locusify?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Locusify is a smart travel tool that automatically generates visual route maps and highlight vlogs from your travel photos. Upload your photos and Locusify extracts GPS data to reconstruct your journey on an interactive map.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What is Viper TypeScript library?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Viper is a minimal TypeScript configuration library inspired by Go's Viper. It provides type-safe config management using Zod for validation and JSON5 for flexible config files, making it easy to manage environment-specific configurations in Node.js applications.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What is WeChat Chat Generator?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "WeChat Chat Generator (微信聊天截图生成器) is a free online tool for creating realistic WeChat chat screenshots. You can customize the sender, messages, and timestamps to generate authentic-looking WeChat conversation images instantly.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Is Caterpi11ar AI open source?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes, several Caterpi11ar AI products are open source. Viper (TypeScript config library), Dentic (habit app), and Lark Imagine Robot are all available on GitHub at github.com/caterpi11ar.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Caterpi11ar AI 是什么？",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Caterpi11ar AI 是一个 AI 产品工作室，专注于构建智能工具、机器人和开源库。旗下产品包括：Locusify（智能旅行路线图生成器）、Dentic（习惯养成应用）、Viper（TypeScript 配置库）、微信聊天截图生成器、飞书 AI 绘图机器人和 SRI 评估工具。",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "微信聊天截图生成器怎么用？",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "访问 wechat.caterpi11ar.com，输入发送者名称、聊天内容和时间，即可生成逼真的微信聊天截图。完全免费，无需安装任何软件。",
+                  },
+                },
+              ],
+            }),
           }}
         />
         <Script

@@ -1,0 +1,27 @@
+# CATERPI11AR
+
+> Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. We ship products that solve real problems — from smart travel maps to habit trackers to developer utilities. AI that evolves, built to last.
+
+## Products
+
+- [Locusify](https://locusify.caterpi11ar.com/): Smart travel tool that auto-generates visual route maps and highlight vlogs from photos. Extracts GPS data and timestamps to reconstruct your journey on an interactive map.
+- [Dentic](https://github.com/caterpi11ar/dentic): Habit-building app designed to help users develop a consistent, lifelong brushing routine using scientifically-backed habit formation techniques.
+- [Viper](https://viper.caterpi11ar.com/): Minimal Viper-inspired configuration library for TypeScript. Type-safe config management with Zod validation and JSON5 support for Node.js applications.
+- [WeChat Chat Generator](https://wechat.caterpi11ar.com/): Free online tool that creates realistic WeChat chat screenshots. Customize sender, messages, and timestamps instantly — no app required. (微信聊天截图生成器)
+- [Lark Imagine Robot](https://github.com/caterpi11ar/lark-imagine-robot): Open-source Lark/Feishu bot for AI-powered image generation and artistic creation. (飞书AI绘图机器人)
+- [SRI Calculator](https://sexual.caterpi11ar.com/): Sexual Repression Index Calculator — a professional mental health assessment tool for measuring and evaluating sexual repression levels.
+
+## Philosophy
+
+- **Evolve Constantly** — Products never stop improving. Every release is a step forward, never the final form.
+- **Ship What Matters** — Focus on real value over feature count. Solve problems that users actually have.
+- **Build to Scale** — Architecture that grows with demand. From prototype to production without compromise.
+- **Open by Default** — Transparent processes, open-source foundations. Community-driven evolution.
+
+## About
+
+Caterpi11ar AI was founded in 2025. We are a remote-first, global team focused on product and engineering. Several of our products are open source and available on GitHub.
+
+- Website: https://caterpi11ar.com
+- GitHub: https://github.com/caterpi11ar
+- Email: hello@caterpi11ar.com

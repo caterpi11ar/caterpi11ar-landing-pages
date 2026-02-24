@@ -1,12 +1,20 @@
 import type { MetadataRoute } from "next"
 
+const BASE_URL = "https://caterpi11ar.com"
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://caterpi11ar.com",
-      lastModified: new Date("2026-02-24"),
+      url: BASE_URL,
+      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
+      alternates: {
+        languages: {
+          en: `${BASE_URL}`,
+          zh: `${BASE_URL}`,
+        },
+      },
     },
   ]
 }
