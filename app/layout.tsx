@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import Script from "next/script"
 import { IBM_Plex_Sans, IBM_Plex_Mono, Bebas_Neue } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
@@ -25,8 +25,20 @@ export const metadata: Metadata = {
     template: "%s | CATERPI11AR",
   },
   description:
-    "Building intelligent AI products that adapt, evolve, and deliver real value. From idea to execution, we ship what matters.",
-  keywords: ["AI products", "artificial intelligence", "smart travel app", "TypeScript library", "AI tools", "WeChat generator", "Caterpi11ar AI"],
+    "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, and more. From idea to execution, we ship what matters.",
+  keywords: [
+    "Caterpi11ar AI",
+    "AI products",
+    "Locusify travel app",
+    "smart travel route map",
+    "Dentic habit app",
+    "Viper TypeScript config library",
+    "WeChat chat screenshot generator",
+    "Lark image generation bot",
+    "SRI Calculator",
+    "artificial intelligence tools",
+    "open source AI",
+  ],
   authors: [{ name: "Caterpi11ar AI", url: "https://caterpi11ar.com" }],
   creator: "Caterpi11ar AI",
   robots: {
@@ -44,10 +56,12 @@ export const metadata: Metadata = {
     siteName: "CATERPI11AR",
     title: "CATERPI11AR — AI That Evolves",
     description:
-      "Building intelligent AI products that adapt, evolve, and deliver real value. From idea to execution, we ship what matters.",
+      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, and more. From idea to execution, we ship what matters.",
     images: [
       {
         url: "/caterpi11ar.jpg",
+        width: 1200,
+        height: 630,
         alt: "CATERPI11AR — AI That Evolves",
       },
     ],
@@ -56,13 +70,20 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CATERPI11AR — AI That Evolves",
     description:
-      "Building intelligent AI products that adapt, evolve, and deliver real value. From idea to execution, we ship what matters.",
+      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, and more.",
     images: ["/caterpi11ar.jpg"],
   },
   icons: {
-    icon: "/caterpi11ar.jpg",
-    apple: "/caterpi11ar.jpg",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-dark-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-icon.png",
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
 }
 
 export default function RootLayout({
@@ -87,6 +108,74 @@ export default function RootLayout({
               email: "hello@caterpi11ar.com",
               sameAs: ["https://github.com/caterpi11ar"],
             }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "CATERPI11AR",
+              url: "https://caterpi11ar.com",
+              description:
+                "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, and more.",
+              publisher: {
+                "@type": "Organization",
+                name: "Caterpi11ar AI",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                name: "Locusify",
+                applicationCategory: "TravelApplication",
+                operatingSystem: "Web",
+                url: "https://locusify.caterpi11ar.com/",
+                description: "Upload photos to auto-generate visual route maps and smooth highlight vlogs.",
+                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+                author: { "@type": "Organization", name: "Caterpi11ar AI" },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                name: "Dentic",
+                applicationCategory: "HealthApplication",
+                operatingSystem: "Web",
+                url: "https://github.com/caterpi11ar/dentic",
+                description: "Build a lifelong brushing habit the scientific way.",
+                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+                author: { "@type": "Organization", name: "Caterpi11ar AI" },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                name: "Viper",
+                applicationCategory: "DeveloperApplication",
+                operatingSystem: "Web",
+                url: "https://viper.caterpi11ar.com/",
+                description: "Minimal Viper-inspired configuration library for TypeScript, built with Zod and JSON5.",
+                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+                author: { "@type": "Organization", name: "Caterpi11ar AI" },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                name: "WeChat Chat Generator",
+                applicationCategory: "UtilitiesApplication",
+                operatingSystem: "Web",
+                url: "https://wechat.caterpi11ar.com/",
+                description: "Online WeChat chat screenshot generator. Fast, realistic, and easy to use.",
+                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+                author: { "@type": "Organization", name: "Caterpi11ar AI" },
+              },
+            ]),
           }}
         />
         <Script
