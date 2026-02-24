@@ -73,9 +73,6 @@ export const metadata: Metadata = {
       "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, and more.",
     images: ["/caterpi11ar.jpg"],
   },
-  verification: {
-    google: "DYr6Q5fSZhD1kffuiU78Y5J1vVfYEUFg5-FHwGp73Tg",
-  },
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
