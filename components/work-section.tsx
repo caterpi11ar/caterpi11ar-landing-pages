@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -103,9 +104,18 @@ export function WorkSection() {
     <section ref={sectionRef} id="work" className="relative py-32 pl-6 md:pl-28 pr-6 md:pr-12">
       {/* Section header */}
       <div ref={headerRef} className="mb-16 flex items-end justify-between">
-        <div>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Products</span>
-          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">PRODUCT SUITE</h2>
+        <div className="flex items-center gap-4">
+          <Image
+            src="https://raw.githubusercontent.com/caterpi11ar/assets/main/logo/caterpi11ar.jpg"
+            alt="Caterpi11ar"
+            width={48}
+            height={48}
+            className="rounded-sm"
+          />
+          <div>
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Products</span>
+            <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">PRODUCT SUITE</h2>
+          </div>
         </div>
         <p className="hidden md:block max-w-xs font-mono text-xs text-muted-foreground text-right leading-relaxed">
           Tools, bots, and libraries — built to solve real problems and ship fast.
