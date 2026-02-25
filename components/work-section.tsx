@@ -200,9 +200,9 @@ function WorkCard({
           <img
             src={experiment.logo}
             alt={experiment.title}
-            width={32}
-            height={32}
-            className="rounded-sm mb-3"
+            width={40}
+            height={40}
+            className="rounded-sm mb-4"
           />
         )}
         <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
