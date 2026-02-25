@@ -47,7 +47,7 @@ export function SideNav() {
       <div className="flex justify-center pt-5">
         <a href="#hero" className="block">
           <Image
-            src="https://raw.githubusercontent.com/caterpi11ar/assets/main/logo/caterpi11ar.jpg"
+            src="/caterpi11ar.jpg"
             alt="Caterpi11ar"
             width={32}
             height={32}

@@ -142,7 +142,7 @@ export function ColophonSection() {
       >
         <div className="flex items-center gap-3">
           <Image
-            src="https://raw.githubusercontent.com/caterpi11ar/assets/main/logo/caterpi11ar.jpg"
+            src="/caterpi11ar.jpg"
             alt="Caterpi11ar"
             width={48}
             height={48}

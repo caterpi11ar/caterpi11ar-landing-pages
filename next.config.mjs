@@ -4,12 +4,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'raw.githubusercontent.com',
-      },
-    ],
+    unoptimized: true,
   },
 }
 

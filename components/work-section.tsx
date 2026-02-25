@@ -106,7 +106,7 @@ export function WorkSection() {
       <div ref={headerRef} className="mb-16 flex items-end justify-between">
         <div className="flex items-center gap-4">
           <Image
-            src="https://raw.githubusercontent.com/caterpi11ar/assets/main/logo/caterpi11ar.jpg"
+            src="/caterpi11ar.jpg"
             alt="Caterpi11ar"
             width={48}
             height={48}
