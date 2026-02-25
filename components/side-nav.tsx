@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 const navItems = [
@@ -42,8 +43,19 @@ export function SideNav() {
   }
 
   return (
-    <nav className="fixed left-0 top-0 z-50 h-screen w-16 md:w-20 hidden md:flex flex-col justify-center border-r border-border/30 bg-background/80 backdrop-blur-sm">
-      <div className="flex flex-col gap-6 px-4">
+    <nav className="fixed left-0 top-0 z-50 h-screen w-16 md:w-20 hidden md:flex flex-col border-r border-border/30 bg-background/80 backdrop-blur-sm">
+      <div className="flex justify-center pt-5">
+        <a href="#hero" className="block">
+          <Image
+            src="https://raw.githubusercontent.com/caterpi11ar/assets/main/logo/caterpi11ar.jpg"
+            alt="Caterpi11ar"
+            width={32}
+            height={32}
+            className="rounded-sm"
+          />
+        </a>
+      </div>
+      <div className="flex-1 flex flex-col justify-center gap-6 px-4">
         {navItems.map(({ id, label }) => (
           <button key={id} onClick={() => scrollToSection(id)} className="group relative flex items-center gap-3">
             <span
@@ -64,5 +76,6 @@ export function SideNav() {
         ))}
       </div>
     </nav>
+
   )
 }

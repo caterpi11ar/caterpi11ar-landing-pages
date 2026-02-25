@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef, useEffect } from "react"
+import Image from "next/image"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
@@ -139,9 +140,18 @@ export function ColophonSection() {
         ref={footerRef}
         className="mt-24 pt-8 border-t border-border/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
       >
-        <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
-          © 2026 Caterpi11ar. All rights reserved.
-        </p>
+        <div className="flex items-center gap-3">
+          <Image
+            src="https://raw.githubusercontent.com/caterpi11ar/assets/main/logo/caterpi11ar.jpg"
+            alt="Caterpi11ar"
+            width={48}
+            height={48}
+            className="rounded-sm opacity-80"
+          />
+          <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
+            © 2026 Caterpi11ar. All rights reserved.
+          </p>
+        </div>
         <p className="font-mono text-[10px] text-muted-foreground">AI that evolves. Built to last.</p>
       </div>
     </section>

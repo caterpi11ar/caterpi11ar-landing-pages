@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import Image from "next/image"
 import { ScrambleTextOnHover } from "@/components/scramble-text"
 import { SplitFlapText, SplitFlapMuteToggle, SplitFlapAudioProvider } from "@/components/split-flap-text"
 import { AnimatedNoise } from "@/components/animated-noise"
@@ -46,6 +47,17 @@ export function HeroSection() {
 
       {/* Main content */}
       <div ref={contentRef} className="flex-1 w-full">
+        <div className="mb-6">
+          <Image
+            src="https://raw.githubusercontent.com/caterpi11ar/assets/main/logo/caterpi11ar.jpg"
+            alt="Caterpi11ar"
+            width={64}
+            height={64}
+            className="rounded-sm"
+            priority
+          />
+        </div>
+
         <SplitFlapAudioProvider>
           <div className="relative">
             <SplitFlapText text="CATERPI11AR" speed={80} />
