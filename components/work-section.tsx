@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import Image from "next/image"
 import { cn } from "@/lib/utils"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -15,6 +14,7 @@ const experiments = [
     description: "Upload photos to auto-generate visual route maps and smooth highlight vlogs.",
     span: "col-span-2 row-span-2",
     url: "https://locusify.caterpi11ar.com/",
+    logo: "/locusify.png",
   },
   {
     title: "Dentic",
@@ -104,18 +104,9 @@ export function WorkSection() {
     <section ref={sectionRef} id="work" className="relative py-32 pl-6 md:pl-28 pr-6 md:pr-12">
       {/* Section header */}
       <div ref={headerRef} className="mb-16 flex items-end justify-between">
-        <div className="flex items-center gap-4">
-          <Image
-            src="/caterpi11ar.jpg"
-            alt="Caterpi11ar"
-            width={48}
-            height={48}
-            className="rounded-sm"
-          />
-          <div>
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Products</span>
-            <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">PRODUCT SUITE</h2>
-          </div>
+        <div>
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Products</span>
+          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">PRODUCT SUITE</h2>
         </div>
         <p className="hidden md:block max-w-xs font-mono text-xs text-muted-foreground text-right leading-relaxed">
           Tools, bots, and libraries — built to solve real problems and ship fast.
@@ -146,6 +137,7 @@ function WorkCard({
     description: string
     span: string
     url?: string
+    logo?: string
   }
   index: number
   persistHover?: boolean
@@ -204,6 +196,15 @@ function WorkCard({
 
       {/* Content */}
       <div className="relative z-10">
+        {experiment.logo && (
+          <img
+            src={experiment.logo}
+            alt={experiment.title}
+            width={32}
+            height={32}
+            className="rounded-sm mb-3"
+          />
+        )}
         <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
           {experiment.medium}
         </span>
