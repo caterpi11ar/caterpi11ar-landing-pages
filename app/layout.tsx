@@ -111,7 +111,7 @@ export default function RootLayout({
               logo: "https://caterpi11ar.com/caterpi11ar.jpg",
               description:
                 "Caterpi11ar AI builds intelligent products that adapt, evolve, and deliver real value — including Locusify (smart travel), Dentic (habit building), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
-              email: "hello@caterpi11ar.com",
+              email: "daiqin1046@gmail.com",
               foundingDate: "2025",
               sameAs: [
                 "https://github.com/caterpi11ar",
