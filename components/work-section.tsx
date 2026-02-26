@@ -51,6 +51,13 @@ const experiments = [
     span: "col-span-2 row-span-1",
     url: "https://sexual.caterpi11ar.com/",
   },
+  {
+    title: "AI System Prompts",
+    medium: "AI Research",
+    description: "Full system prompts from 30+ AI coding tools — Claude Code, Cursor, Devin, Windsurf, v0 & more.",
+    span: "col-span-1 row-span-1",
+    url: "https://ai.caterpi11ar.com/",
+  },
 ]
 
 export function WorkSection() {

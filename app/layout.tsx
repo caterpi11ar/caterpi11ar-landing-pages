@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | CATERPI11AR",
   },
   description:
-    "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, and more. From idea to execution, we ship what matters.",
+    "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more. From idea to execution, we ship what matters.",
   keywords: [
     "Caterpi11ar AI",
     "AI products",
@@ -36,6 +36,10 @@ export const metadata: Metadata = {
     "WeChat chat screenshot generator",
     "Lark image generation bot",
     "SRI Calculator",
+    "AI system prompts",
+    "AI coding tools system prompts",
+    "Claude Code system prompt",
+    "Cursor system prompt",
     "artificial intelligence tools",
     "open source AI",
   ],
@@ -57,7 +61,7 @@ export const metadata: Metadata = {
     siteName: "CATERPI11AR",
     title: "CATERPI11AR — AI That Evolves",
     description:
-      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, and more. From idea to execution, we ship what matters.",
+      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more. From idea to execution, we ship what matters.",
     images: [
       {
         url: "/caterpi11ar.jpg",
@@ -71,7 +75,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CATERPI11AR — AI That Evolves",
     description:
-      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, and more.",
+      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more.",
     images: ["/caterpi11ar.jpg"],
   },
   icons: {
@@ -106,7 +110,7 @@ export default function RootLayout({
               url: "https://caterpi11ar.com",
               logo: "https://caterpi11ar.com/caterpi11ar.jpg",
               description:
-                "Caterpi11ar AI builds intelligent products that adapt, evolve, and deliver real value — including Locusify (smart travel), Dentic (habit building), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, and SRI Calculator.",
+                "Caterpi11ar AI builds intelligent products that adapt, evolve, and deliver real value — including Locusify (smart travel), Dentic (habit building), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
               email: "hello@caterpi11ar.com",
               foundingDate: "2025",
               sameAs: [
@@ -124,7 +128,7 @@ export default function RootLayout({
               name: "CATERPI11AR",
               url: "https://caterpi11ar.com",
               description:
-                "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, and more.",
+                "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more.",
               publisher: {
                 "@type": "Organization",
                 name: "Caterpi11ar AI",
@@ -208,6 +212,18 @@ export default function RootLayout({
                 author: { "@type": "Organization", name: "Caterpi11ar AI" },
                 keywords: "SRI calculator, sexual repression index, mental health assessment tool",
               },
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                name: "AI System Prompts Playground",
+                applicationCategory: "DeveloperApplication",
+                operatingSystem: "Web",
+                url: "https://ai.caterpi11ar.com/",
+                description: "A curated collection of 30+ AI coding tools' system prompts — including Claude Code, Cursor, Devin AI, Windsurf, Replit, v0, Perplexity, and more. Searchable, SEO-friendly, and open for exploration.",
+                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+                author: { "@type": "Organization", name: "Caterpi11ar AI" },
+                keywords: "AI system prompts, Claude Code system prompt, Cursor system prompt, Devin AI prompt, AI coding tools, system prompt collection",
+              },
             ]),
           }}
         />
@@ -223,7 +239,7 @@ export default function RootLayout({
                   name: "What is Caterpi11ar AI?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, and SRI Calculator.",
+                    text: "Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
                   },
                 },
                 {
@@ -252,6 +268,14 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Question",
+                  name: "What is AI System Prompts Playground?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "AI System Prompts Playground is a curated collection of 30+ AI coding tools' system prompts. It includes full system prompts from Claude Code, Cursor, Devin AI, Windsurf, Replit, v0, Perplexity, Xcode AI, and many more — all searchable and browsable at ai.caterpi11ar.com.",
+                  },
+                },
+                {
+                  "@type": "Question",
                   name: "Is Caterpi11ar AI open source?",
                   acceptedAnswer: {
                     "@type": "Answer",
@@ -263,7 +287,7 @@ export default function RootLayout({
                   name: "Caterpi11ar AI 是什么？",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Caterpi11ar AI 是一个 AI 产品工作室，专注于构建智能工具、机器人和开源库。旗下产品包括：Locusify（智能旅行路线图生成器）、Dentic（习惯养成应用）、Viper（TypeScript 配置库）、微信聊天截图生成器、飞书 AI 绘图机器人和 SRI 评估工具。",
+                    text: "Caterpi11ar AI 是一个 AI 产品工作室，专注于构建智能工具、机器人和开源库。旗下产品包括：Locusify（智能旅行路线图生成器）、Dentic（习惯养成应用）、Viper（TypeScript 配置库）、微信聊天截图生成器、飞书 AI 绘图机器人、SRI 评估工具和 AI System Prompts Playground（AI 编程工具系统提示词合集）。",
                   },
                 },
                 {
