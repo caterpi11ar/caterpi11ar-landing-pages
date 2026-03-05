@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next"
 import Script from "next/script"
 import { IBM_Plex_Sans, IBM_Plex_Mono, Bebas_Neue } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { products } from "@/lib/products"
 import { SmoothScroll } from "@/components/smooth-scroll"
 import "./globals.css"
 
@@ -139,92 +140,20 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([
-              {
+            __html: JSON.stringify(
+              products.map((p) => ({
                 "@context": "https://schema.org",
                 "@type": "SoftwareApplication",
-                name: "Locusify",
-                applicationCategory: "TravelApplication",
+                name: p.title,
+                applicationCategory: p.category,
                 operatingSystem: "Web",
-                url: "https://locusify.caterpi11ar.com/",
-                description: "Locusify is a smart travel tool that lets you upload photos to auto-generate visual route maps and smooth highlight vlogs. It automatically extracts GPS data and timestamps from photos to reconstruct your journey on a map.",
+                url: `https://caterpi11ar.com/products/${p.slug}`,
+                description: p.longDescription,
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
                 author: { "@type": "Organization", name: "Caterpi11ar AI" },
-                keywords: "travel route map, photo to map, travel vlog generator, trip visualization",
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                name: "Dentic",
-                applicationCategory: "HealthApplication",
-                operatingSystem: "Web",
-                url: "https://github.com/caterpi11ar/dentic",
-                description: "Dentic is a habit-building app designed to help users develop a consistent, lifelong brushing routine using scientifically-backed habit formation techniques.",
-                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-                author: { "@type": "Organization", name: "Caterpi11ar AI" },
-                keywords: "habit app, brushing habit, dental hygiene, habit tracker",
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                name: "Viper",
-                applicationCategory: "DeveloperApplication",
-                operatingSystem: "Web",
-                url: "https://viper.caterpi11ar.com/",
-                description: "Viper is a minimal, Viper-inspired configuration library for TypeScript, built with Zod validation and JSON5 support. It provides type-safe config management for Node.js applications.",
-                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-                author: { "@type": "Organization", name: "Caterpi11ar AI" },
-                keywords: "TypeScript config library, Zod config, JSON5, type-safe configuration, Node.js config",
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                name: "WeChat Chat Generator",
-                applicationCategory: "UtilitiesApplication",
-                operatingSystem: "Web",
-                url: "https://wechat.caterpi11ar.com/",
-                description: "WeChat Chat Generator is a free online tool that creates realistic WeChat chat screenshots. Generate custom WeChat conversation screenshots instantly — no app required.",
-                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-                author: { "@type": "Organization", name: "Caterpi11ar AI" },
-                keywords: "WeChat chat screenshot generator, fake WeChat chat, WeChat screenshot maker, 微信聊天截图生成器",
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                name: "Lark Imagine Robot",
-                applicationCategory: "BusinessApplication",
-                operatingSystem: "Web",
-                url: "https://github.com/caterpi11ar/lark-imagine-robot",
-                description: "Lark Imagine Robot is an open-source Lark (Feishu) bot for AI-powered image generation and artistic creation. Bring AI image generation directly into your Lark workspace.",
-                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-                author: { "@type": "Organization", name: "Caterpi11ar AI" },
-                keywords: "Lark bot, Feishu bot, AI image generation, 飞书机器人, AI绘图",
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                name: "SRI Calculator",
-                applicationCategory: "HealthApplication",
-                operatingSystem: "Web",
-                url: "https://sexual.caterpi11ar.com/",
-                description: "SRI Calculator (Sexual Repression Index Calculator) is a professional mental health assessment tool for measuring and evaluating sexual repression levels.",
-                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-                author: { "@type": "Organization", name: "Caterpi11ar AI" },
-                keywords: "SRI calculator, sexual repression index, mental health assessment tool",
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                name: "AI System Prompts Playground",
-                applicationCategory: "DeveloperApplication",
-                operatingSystem: "Web",
-                url: "https://ai.caterpi11ar.com/",
-                description: "A curated collection of 30+ AI coding tools' system prompts — including Claude Code, Cursor, Devin AI, Windsurf, Replit, v0, Perplexity, and more. Searchable, SEO-friendly, and open for exploration.",
-                offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-                author: { "@type": "Organization", name: "Caterpi11ar AI" },
-                keywords: "AI system prompts, Claude Code system prompt, Cursor system prompt, Devin AI prompt, AI coding tools, system prompt collection",
-              },
-            ]),
+                keywords: p.keywords,
+              })),
+            ),
           }}
         />
         <script

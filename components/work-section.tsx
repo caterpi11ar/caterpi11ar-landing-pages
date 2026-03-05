@@ -1,64 +1,14 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
 import { cn } from "@/lib/utils"
+import { products } from "@/lib/products"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
-
-const experiments = [
-  {
-    title: "Locusify",
-    medium: "Smart Travel",
-    description: "Upload photos to auto-generate visual route maps and smooth highlight vlogs.",
-    span: "col-span-2 row-span-2",
-    url: "https://locusify.caterpi11ar.com/",
-    logo: "/locusify.png",
-  },
-  {
-    title: "Dentic",
-    medium: "Health & Habits",
-    description: "Build a lifelong brushing habit the scientific way.",
-    span: "col-span-1 row-span-1",
-    url: "https://github.com/caterpi11ar/dentic",
-  },
-  {
-    title: "Viper",
-    medium: "Open Source Library",
-    description: "Minimal Viper-inspired configuration library for TypeScript, built with Zod and JSON5.",
-    span: "col-span-1 row-span-1",
-    url: "https://viper.caterpi11ar.com/",
-  },
-  {
-    title: "WeChat Chat Generator",
-    medium: "Utility",
-    description: "Online WeChat chat screenshot generator. Fast, realistic, and easy to use.",
-    span: "col-span-1 row-span-2",
-    url: "https://wechat.caterpi11ar.com/",
-  },
-  {
-    title: "Lark Imagine Robot",
-    medium: "AI Bot",
-    description: "Lark/Feishu bot for AI-powered image generation and artistic creation.",
-    span: "col-span-1 row-span-1",
-    url: "https://github.com/caterpi11ar/lark-imagine-robot",
-  },
-  {
-    title: "SRI Calculator",
-    medium: "Assessment Tool",
-    description: "Sexual Repression Index Calculator — a professional mental health assessment tool.",
-    span: "col-span-2 row-span-1",
-    url: "https://sexual.caterpi11ar.com/",
-  },
-  {
-    title: "AI System Prompts",
-    medium: "AI Research",
-    description: "Full system prompts from 30+ AI coding tools — Claude Code, Cursor, Devin, Windsurf, v0 & more.",
-    span: "col-span-1 row-span-1",
-    url: "https://ai.caterpi11ar.com/",
-  },
-]
 
 export function WorkSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -125,8 +75,8 @@ export function WorkSection() {
         ref={gridRef}
         className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[180px] md:auto-rows-[200px]"
       >
-        {experiments.map((experiment, index) => (
-          <WorkCard key={index} experiment={experiment} index={index} persistHover={index === 0} />
+        {products.map((product, index) => (
+          <WorkCard key={product.slug} product={product} index={index} persistHover={index === 0} />
         ))}
       </div>
     </section>
@@ -134,16 +84,16 @@ export function WorkSection() {
 }
 
 function WorkCard({
-  experiment,
+  product,
   index,
   persistHover = false,
 }: {
-  experiment: {
+  product: {
+    slug: string
     title: string
-    medium: string
+    tagline: string
     description: string
     span: string
-    url?: string
     logo?: string
   }
   index: number
@@ -152,7 +102,6 @@ function WorkCard({
   const [isHovered, setIsHovered] = useState(false)
   const cardRef = useRef<HTMLElement>(null)
   const [isScrollActive, setIsScrollActive] = useState(false)
-
 
   useEffect(() => {
     if (!persistHover || !cardRef.current) return
@@ -175,23 +124,19 @@ function WorkCard({
       ref={cardRef}
       className={cn(
         "group relative border border-border/40 p-5 flex flex-col justify-between transition-all duration-500 overflow-hidden",
-        experiment.span,
+        product.span,
         isActive && "border-accent/60",
-        experiment.url && "cursor-pointer",
+        "cursor-pointer",
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Accessible link overlay */}
-      {experiment.url && (
-        <a
-          href={experiment.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute inset-0 z-20"
-          aria-label={`${experiment.title} — ${experiment.description}`}
-        />
-      )}
+      {/* Link overlay to product page */}
+      <Link
+        href={`/products/${product.slug}`}
+        className="absolute inset-0 z-20"
+        aria-label={`${product.title} — ${product.description}`}
+      />
 
       {/* Background layer */}
       <div
@@ -203,17 +148,17 @@ function WorkCard({
 
       {/* Content */}
       <div className="relative z-10">
-        {experiment.logo && (
-          <img
-            src={experiment.logo}
-            alt={experiment.title}
+        {product.logo && (
+          <Image
+            src={product.logo}
+            alt={product.title}
             width={40}
             height={40}
             className="rounded-sm mb-4"
           />
         )}
         <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-          {experiment.medium}
+          {product.tagline}
         </span>
         <h3
           className={cn(
@@ -221,7 +166,7 @@ function WorkCard({
             isActive ? "text-accent" : "text-foreground",
           )}
         >
-          {experiment.title}
+          {product.title}
         </h3>
       </div>
 
@@ -233,7 +178,7 @@ function WorkCard({
             isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2",
           )}
         >
-          {experiment.description}
+          {product.description}
         </p>
       </div>
 
