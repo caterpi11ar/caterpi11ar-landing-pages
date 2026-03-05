@@ -56,7 +56,7 @@ export function HeroSection() {
         </SplitFlapAudioProvider>
 
         <h1 className="font-[var(--font-bebas)] text-muted-foreground/60 text-[clamp(1rem,3vw,2rem)] mt-4 tracking-wide">
-          AI That Evolves
+          Caterpi11ar — AI That Evolves
         </h1>
 
         <p className="mt-12 max-w-md font-mono text-sm text-muted-foreground leading-relaxed">

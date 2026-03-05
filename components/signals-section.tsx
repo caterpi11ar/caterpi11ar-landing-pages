@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
@@ -10,32 +11,44 @@ gsap.registerPlugin(ScrollTrigger)
 const signals = [
   {
     date: "2026.02",
+    isoDate: "2026-02",
     title: "Dentic",
+    slug: "dentic",
     note: "Habit-building app launched — build a lifelong brushing habit the scientific way.",
   },
   {
     date: "2026.02",
+    isoDate: "2026-02",
     title: "Locusify",
+    slug: "locusify",
     note: "Smart travel tool launched — upload photos to auto-generate route maps and highlight vlogs.",
   },
   {
     date: "2026.01",
+    isoDate: "2026-01",
     title: "Viper",
+    slug: "viper",
     note: "Minimal Viper-inspired TypeScript config library released with Zod and JSON5 support.",
   },
   {
     date: "2025.12",
+    isoDate: "2025-12",
     title: "SRI Calculator",
+    slug: "sri-calculator",
     note: "Sexual Repression Index Calculator shipped — a professional mental health assessment tool.",
   },
   {
     date: "2025.11",
+    isoDate: "2025-11",
     title: "WeChat Chat Gen",
+    slug: "wechat-chat-generator",
     note: "Online WeChat chat screenshot generator launched. Realistic and effortless.",
   },
   {
     date: "2025.10",
+    isoDate: "2025-10",
     title: "Lark Imagine",
+    slug: "lark-imagine-robot",
     note: "Lark/Feishu bot for AI-powered image generation open-sourced on GitHub.",
   },
 ]
@@ -130,6 +143,7 @@ export function SignalsSection() {
     <section id="signals" ref={sectionRef} className="relative py-32 pl-6 md:pl-28">
       <div
         ref={cursorRef}
+        aria-hidden="true"
         className={cn(
           "pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 z-50",
           "w-12 h-12 rounded-full border-2 border-accent bg-accent",
@@ -154,7 +168,7 @@ export function SignalsSection() {
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {signals.map((signal, index) => (
-          <SignalCard key={index} signal={signal} index={index} />
+          <SignalCard key={signal.slug} signal={signal} index={index} />
         ))}
       </div>
     </section>
@@ -165,7 +179,7 @@ function SignalCard({
   signal,
   index,
 }: {
-  signal: { date: string; title: string; note: string }
+  signal: { date: string; isoDate: string; title: string; slug: string; note: string }
   index: number
 }) {
   return (
@@ -176,38 +190,40 @@ function SignalCard({
         "hover:-translate-y-2",
       )}
     >
-      {/* Card with paper texture effect */}
-      <div className="relative bg-card border border-border/50 md:border-t md:border-l md:border-r-0 md:border-b-0 p-8">
-        {/* Top torn edge effect */}
-        <div className="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-border/40 to-transparent" />
+      <Link href={`/products/${signal.slug}`} className="block">
+        {/* Card with paper texture effect */}
+        <div className="relative bg-card border border-border/50 md:border-t md:border-l md:border-r-0 md:border-b-0 p-8">
+          {/* Top torn edge effect */}
+          <div className="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-border/40 to-transparent" />
 
-        {/* Issue number - editorial style */}
-        <div className="flex items-baseline justify-between mb-8">
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-            No. {String(index + 1).padStart(2, "0")}
-          </span>
-          <time className="font-mono text-[10px] text-muted-foreground/60">{signal.date}</time>
+          {/* Issue number - editorial style */}
+          <div className="flex items-baseline justify-between mb-8">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              No. {String(index + 1).padStart(2, "0")}
+            </span>
+            <time className="font-mono text-[10px] text-muted-foreground/60" dateTime={signal.isoDate}>{signal.date}</time>
+          </div>
+
+          {/* Title */}
+          <h3 className="font-[var(--font-bebas)] text-4xl tracking-tight mb-4 group-hover:text-accent transition-colors duration-300">
+            {signal.title}
+          </h3>
+
+          {/* Divider line */}
+          <div className="w-12 h-px bg-accent/60 mb-6 group-hover:w-full transition-all duration-500" />
+
+          {/* Description */}
+          <p className="font-mono text-xs text-muted-foreground leading-relaxed">{signal.note}</p>
+
+          {/* Bottom right corner fold effect */}
+          <div className="absolute bottom-0 right-0 w-6 h-6 overflow-hidden">
+            <div className="absolute bottom-0 right-0 w-8 h-8 bg-background rotate-45 translate-x-4 translate-y-4 border-t border-l border-border/30" />
+          </div>
         </div>
 
-        {/* Title */}
-        <h3 className="font-[var(--font-bebas)] text-4xl tracking-tight mb-4 group-hover:text-accent transition-colors duration-300">
-          {signal.title}
-        </h3>
-
-        {/* Divider line */}
-        <div className="w-12 h-px bg-accent/60 mb-6 group-hover:w-full transition-all duration-500" />
-
-        {/* Description */}
-        <p className="font-mono text-xs text-muted-foreground leading-relaxed">{signal.note}</p>
-
-        {/* Bottom right corner fold effect */}
-        <div className="absolute bottom-0 right-0 w-6 h-6 overflow-hidden">
-          <div className="absolute bottom-0 right-0 w-8 h-8 bg-background rotate-45 translate-x-4 translate-y-4 border-t border-l border-border/30" />
-        </div>
-      </div>
-
-      {/* Shadow/depth layer */}
-      <div className="absolute inset-0 -z-10 translate-x-1 translate-y-1 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        {/* Shadow/depth layer */}
+        <div className="absolute inset-0 -z-10 translate-x-1 translate-y-1 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </Link>
     </article>
   )
 }

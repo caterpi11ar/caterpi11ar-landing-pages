@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { motion } from "framer-motion"
+import { LazyMotion, domAnimation, m } from "framer-motion"
 import { useMemo, useState, useCallback, useEffect, useRef, createContext, useContext } from "react"
 import { Volume2, VolumeX } from "lucide-react"
 
@@ -147,6 +147,7 @@ function SplitFlapTextInner({ text, className = "", speed = 50 }: SplitFlapTextP
   return (
     <div
       className={`inline-flex gap-[0.08em] items-center cursor-pointer ${className}`}
+      role="img"
       aria-label={text}
       onMouseEnter={handleMouseEnter}
       style={{ perspective: "1000px" }}
@@ -167,7 +168,11 @@ function SplitFlapTextInner({ text, className = "", speed = 50 }: SplitFlapTextP
 }
 
 export function SplitFlapText(props: SplitFlapTextProps) {
-  return <SplitFlapTextInner {...props} />
+  return (
+    <LazyMotion features={domAnimation}>
+      <SplitFlapTextInner {...props} />
+    </LazyMotion>
+  )
 }
 
 interface SplitFlapCharProps {
@@ -246,7 +251,7 @@ function SplitFlapChar({ char, index, animationKey, skipEntrance, speed, playCli
   }
 
   return (
-    <motion.div
+    <m.div
       initial={skipEntrance ? false : { opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: tileDelay, duration: 0.3, ease: "easeOut" }}
@@ -280,7 +285,7 @@ function SplitFlapChar({ char, index, animationKey, skipEntrance, speed, playCli
         </span>
       </div>
 
-      <motion.div
+      <m.div
         key={`${animationKey}-${isSettled}`}
         initial={{ rotateX: -90 }}
         animate={{ rotateX: 0 }}
@@ -305,7 +310,7 @@ function SplitFlapChar({ char, index, animationKey, skipEntrance, speed, playCli
             {currentChar}
           </span>
         </div>
-      </motion.div>
-    </motion.div>
+      </m.div>
+    </m.div>
   )
 }

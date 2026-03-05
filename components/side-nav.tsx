@@ -46,12 +46,12 @@ export function SideNav() {
   return (
     <>
       {/* Desktop side nav */}
-      <nav className="fixed left-0 top-0 z-50 h-screen w-16 md:w-20 hidden md:flex flex-col border-r border-border/30 bg-background/80 backdrop-blur-sm">
+      <nav aria-label="Main navigation" className="fixed left-0 top-0 z-50 h-screen w-16 md:w-20 hidden md:flex flex-col border-r border-border/30 bg-background/80 backdrop-blur-sm">
         <div className="flex justify-center pt-5">
           <a href="#hero" className="block">
             <Image
               src="/caterpi11ar.jpg"
-              alt="Caterpi11ar"
+              alt="Caterpi11ar AI logo"
               width={32}
               height={32}
               className="rounded-sm"
@@ -60,7 +60,7 @@ export function SideNav() {
         </div>
         <div className="flex-1 flex flex-col justify-center gap-6 px-4">
           {navItems.map(({ id, label }) => (
-            <button key={id} onClick={() => scrollToSection(id)} className="group relative flex items-center gap-3">
+            <button key={id} onClick={() => scrollToSection(id)} className="group relative flex items-center gap-3" aria-label={`Navigate to ${label}`}>
               <span
                 className={cn(
                   "h-1.5 w-1.5 rounded-full transition-all duration-300",
@@ -81,7 +81,7 @@ export function SideNav() {
       </nav>
 
       {/* Mobile bottom nav */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 flex md:hidden items-center justify-around border-t border-border/30 bg-background/80 backdrop-blur-sm px-2 py-2">
+      <nav aria-label="Mobile navigation" className="fixed bottom-0 left-0 right-0 z-50 flex md:hidden items-center justify-around border-t border-border/30 bg-background/80 backdrop-blur-sm px-2 py-2">
         {navItems.map(({ id, label, icon: Icon }) => (
           <button
             key={id}

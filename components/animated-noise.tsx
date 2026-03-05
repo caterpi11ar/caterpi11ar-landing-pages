@@ -63,6 +63,7 @@ export function AnimatedNoise({ opacity = 0.05, className }: AnimatedNoiseProps)
     <canvas
       ref={canvasRef}
       className={className}
+      aria-hidden="true"
       style={{
         position: "absolute",
         inset: 0,

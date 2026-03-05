@@ -99,9 +99,9 @@ export function PrinciplesSection() {
 
       {/* Staggered principles */}
       <div ref={principlesRef} className="space-y-24 md:space-y-32">
-        {principles.map((principle, index) => (
+        {principles.map((principle) => (
           <article
-            key={index}
+            key={principle.number}
             className={`flex flex-col ${
               principle.align === "right" ? "items-end text-right" : "items-start text-left"
             }`}

@@ -77,6 +77,8 @@ export default async function ProductPage({
             operatingSystem: "Web",
             url: `https://caterpi11ar.com/products/${product.slug}`,
             description: product.longDescription,
+            datePublished: "2025-10-01",
+            dateModified: "2026-03-01",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
             author: { "@type": "Organization", name: "Caterpi11ar AI" },
             keywords: product.keywords,
@@ -98,7 +100,7 @@ export default async function ProductPage({
             <Link href="/" className="block">
               <Image
                 src="/caterpi11ar.jpg"
-                alt="Caterpi11ar"
+                alt="Caterpi11ar AI logo"
                 width={28}
                 height={28}
                 className="rounded-sm"

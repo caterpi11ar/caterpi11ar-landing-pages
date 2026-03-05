@@ -1,0 +1,197 @@
+# CATERPI11AR — Full Product Documentation
+
+> Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. We ship products that solve real problems — from smart travel maps to habit trackers to developer utilities. AI that evolves, built to last.
+
+---
+
+## 1. Locusify — Smart Travel Route Maps
+
+- URL: https://locusify.caterpi11ar.com/
+- Product page: https://caterpi11ar.com/products/locusify
+- Category: Travel Application
+- Status: Live
+
+### Description
+Locusify is a smart travel tool that lets you upload photos to auto-generate visual route maps and smooth highlight vlogs. It automatically extracts GPS data and timestamps from photos to reconstruct your journey on an interactive map. Whether you're documenting a weekend getaway or a months-long backpacking trip, Locusify turns your photo collection into a beautiful, shareable travel story.
+
+### Features
+- Auto-extract GPS data from photos
+- Interactive route map generation
+- Highlight vlog creation
+- Timeline-based journey reconstruction
+- Shareable travel stories
+- Multi-format photo support
+
+### Tech Stack
+Next.js, React, Mapbox, FFmpeg, EXIF.js
+
+---
+
+## 2. Dentic — Habit-Building App
+
+- URL: https://github.com/caterpi11ar/dentic
+- Product page: https://caterpi11ar.com/products/dentic
+- Category: Health Application
+- Status: Live
+
+### Description
+Dentic is a habit-building app designed to help users develop a consistent, lifelong brushing routine using scientifically-backed habit formation techniques. Based on research in behavioral psychology, Dentic uses progressive reinforcement, streak tracking, and gentle reminders to transform dental hygiene from a chore into an automatic habit.
+
+### Features
+- Science-backed habit formation
+- Progressive streak tracking
+- Gentle smart reminders
+- Behavioral psychology insights
+- Progress visualization
+- Open source
+
+### Tech Stack
+React Native, TypeScript, Expo
+
+---
+
+## 3. Viper — TypeScript Config Library
+
+- URL: https://viper.caterpi11ar.com/
+- Product page: https://caterpi11ar.com/products/viper
+- Category: Developer Application
+- Status: Live
+
+### Description
+Viper is a minimal, Viper-inspired configuration library for TypeScript, built with Zod validation and JSON5 support. It provides type-safe config management for Node.js applications, making it easy to handle environment-specific configurations with strong runtime validation. Inspired by Go's popular Viper library, it brings the same ergonomic config management to the TypeScript ecosystem.
+
+### Features
+- Type-safe configuration with Zod
+- JSON5 config file support
+- Environment variable binding
+- Hierarchical config merging
+- Minimal API surface
+- Zero dependencies beyond Zod
+
+### Tech Stack
+TypeScript, Zod, JSON5, Node.js
+
+---
+
+## 4. WeChat Chat Generator (微信聊天截图生成器)
+
+- URL: https://wechat.caterpi11ar.com/
+- Product page: https://caterpi11ar.com/products/wechat-chat-generator
+- Category: Utilities Application
+- Status: Live
+
+### Description
+WeChat Chat Generator is a free online tool that creates realistic WeChat chat screenshots. Generate custom WeChat conversation screenshots instantly — no app required. Customize sender names, avatars, message content, timestamps, and more to create authentic-looking WeChat conversation images for presentations, social media, or creative projects.
+
+### Features
+- Realistic WeChat UI recreation
+- Custom sender names and avatars
+- Multiple message types support
+- Timestamp customization
+- One-click screenshot export
+- No installation required
+
+### Tech Stack
+Next.js, React, Canvas API, Tailwind CSS
+
+---
+
+## 5. Lark Imagine Robot (飞书AI绘图机器人)
+
+- URL: https://github.com/caterpi11ar/lark-imagine-robot
+- Product page: https://caterpi11ar.com/products/lark-imagine-robot
+- Category: Business Application
+- Status: Live
+
+### Description
+Lark Imagine Robot is an open-source Lark (Feishu) bot for AI-powered image generation and artistic creation. Bring AI image generation directly into your Lark workspace — team members can generate images, illustrations, and creative artwork using natural language prompts without leaving the collaboration platform.
+
+### Features
+- Natural language image generation
+- Direct Lark/Feishu integration
+- Team-wide access in workspace
+- Multiple AI model support
+- Artistic style customization
+- Open source & self-hostable
+
+### Tech Stack
+Node.js, Lark SDK, OpenAI API, TypeScript
+
+---
+
+## 6. SRI Calculator — Sexual Repression Index
+
+- URL: https://sexual.caterpi11ar.com/
+- Product page: https://caterpi11ar.com/products/sri-calculator
+- Category: Health Application
+- Status: Live
+
+### Description
+SRI Calculator (Sexual Repression Index Calculator) is a professional mental health assessment tool for measuring and evaluating sexual repression levels. It provides a structured, research-informed questionnaire with detailed scoring and interpretation to help individuals better understand their psychological patterns around sexuality.
+
+### Features
+- Research-informed questionnaire
+- Detailed scoring algorithm
+- Comprehensive result interpretation
+- Privacy-first design
+- Multi-language support
+- Anonymous assessment
+
+### Tech Stack
+Next.js, React, Tailwind CSS, TypeScript
+
+---
+
+## 7. AI System Prompts Playground
+
+- URL: https://ai.caterpi11ar.com/
+- Product page: https://caterpi11ar.com/products/ai-system-prompts
+- Category: Developer Application
+- Status: Live
+
+### Description
+AI System Prompts Playground is a curated collection of 30+ AI coding tools' system prompts — including Claude Code, Cursor, Devin AI, Windsurf, Replit, v0, Perplexity, and more. Searchable, SEO-friendly, and open for exploration. Compare how different AI tools are instructed, study prompt engineering patterns, and gain insights into the design of AI coding assistants.
+
+### Features
+- 30+ AI tool system prompts
+- Full-text search
+- Side-by-side comparison
+- Regular updates with new tools
+- SEO-friendly pages
+- Open for exploration
+
+### Tech Stack
+Next.js, React, MDX, Tailwind CSS
+
+---
+
+## FAQ
+
+### What is Caterpi11ar AI?
+Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.
+
+### What is Locusify?
+Locusify is a smart travel tool that automatically generates visual route maps and highlight vlogs from your travel photos. Upload your photos and Locusify extracts GPS data to reconstruct your journey on an interactive map.
+
+### What is Viper TypeScript library?
+Viper is a minimal TypeScript configuration library inspired by Go's Viper. It provides type-safe config management using Zod for validation and JSON5 for flexible config files, making it easy to manage environment-specific configurations in Node.js applications.
+
+### What is WeChat Chat Generator?
+WeChat Chat Generator (微信聊天截图生成器) is a free online tool for creating realistic WeChat chat screenshots. You can customize the sender, messages, and timestamps to generate authentic-looking WeChat conversation images instantly.
+
+### What is AI System Prompts Playground?
+AI System Prompts Playground is a curated collection of 30+ AI coding tools' system prompts. It includes full system prompts from Claude Code, Cursor, Devin AI, Windsurf, Replit, v0, Perplexity, Xcode AI, and many more — all searchable and browsable at ai.caterpi11ar.com.
+
+### Is Caterpi11ar AI open source?
+Yes, several Caterpi11ar AI products are open source. Viper (TypeScript config library), Dentic (habit app), and Lark Imagine Robot are all available on GitHub at github.com/caterpi11ar.
+
+---
+
+## About
+
+- Founded: 2025
+- Founder: Qin Dai
+- Location: Remote-first, Global
+- Website: https://caterpi11ar.com
+- GitHub: https://github.com/caterpi11ar
+- Email: daiqin1046@gmail.com

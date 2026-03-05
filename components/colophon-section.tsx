@@ -84,7 +84,7 @@ export function ColophonSection() {
       <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
         {/* Team */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Team</h4>
+          <h3 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Team</h3>
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">Caterpi11ar AI</li>
             <li className="font-mono text-xs text-foreground/80">Product & Engineering</li>
@@ -93,7 +93,7 @@ export function ColophonSection() {
 
         {/* Location */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Location</h4>
+          <h3 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Location</h3>
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">Remote-first</li>
             <li className="font-mono text-xs text-foreground/80">Global</li>
@@ -102,14 +102,14 @@ export function ColophonSection() {
 
         {/* Contact */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Contact</h4>
+          <h3 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Contact</h3>
           <ul className="space-y-2">
             <li>
               <a
                 href="mailto:daiqin1046@gmail.com"
                 className="font-mono text-xs text-foreground/80 hover:text-accent transition-colors duration-200"
               >
-                Email
+                Email Caterpi11ar AI
               </a>
             </li>
             <li>
@@ -119,7 +119,7 @@ export function ColophonSection() {
                 rel="noopener noreferrer"
                 className="font-mono text-xs text-foreground/80 hover:text-accent transition-colors duration-200"
               >
-                GitHub
+                Caterpi11ar on GitHub
               </a>
             </li>
           </ul>
@@ -127,7 +127,7 @@ export function ColophonSection() {
 
         {/* Year */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Year</h4>
+          <h3 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Year</h3>
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">2026</li>
             <li className="font-mono text-xs text-foreground/80">Ongoing</li>
@@ -136,14 +136,14 @@ export function ColophonSection() {
       </div>
 
       {/* Bottom copyright */}
-      <div
+      <footer
         ref={footerRef}
         className="mt-24 pt-8 border-t border-border/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
       >
         <div className="flex items-center gap-3">
           <Image
             src="/caterpi11ar.jpg"
-            alt="Caterpi11ar"
+            alt="Caterpi11ar AI logo"
             width={48}
             height={48}
             className="rounded-sm opacity-80"
@@ -153,7 +153,7 @@ export function ColophonSection() {
           </p>
         </div>
         <p className="font-mono text-[10px] text-muted-foreground">AI that evolves. Built to last.</p>
-      </div>
+      </footer>
     </section>
   )
 }

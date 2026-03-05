@@ -114,6 +114,10 @@ export default function RootLayout({
                 "Caterpi11ar AI builds intelligent products that adapt, evolve, and deliver real value — including Locusify (smart travel), Dentic (habit building), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
               email: "daiqin1046@gmail.com",
               foundingDate: "2025",
+              founder: {
+                "@type": "Person",
+                name: "Qin Dai",
+              },
               sameAs: [
                 "https://github.com/caterpi11ar",
               ],
@@ -128,6 +132,8 @@ export default function RootLayout({
               "@type": "WebSite",
               name: "CATERPI11AR",
               url: "https://caterpi11ar.com",
+              datePublished: "2025-10-01",
+              dateModified: "2026-03-01",
               description:
                 "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more.",
               publisher: {
@@ -140,20 +146,22 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              products.map((p) => ({
-                "@context": "https://schema.org",
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": products.map((p) => ({
                 "@type": "SoftwareApplication",
                 name: p.title,
                 applicationCategory: p.category,
                 operatingSystem: "Web",
                 url: `https://caterpi11ar.com/products/${p.slug}`,
                 description: p.longDescription,
+                datePublished: "2025-10-01",
+                dateModified: "2026-03-01",
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
                 author: { "@type": "Organization", name: "Caterpi11ar AI" },
                 keywords: p.keywords,
               })),
-            ),
+            }),
           }}
         />
         <script
