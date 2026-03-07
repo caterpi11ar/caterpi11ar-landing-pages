@@ -27,7 +27,30 @@ Next.js, React, Mapbox, FFmpeg, EXIF.js
 
 ---
 
-## 2. Dentic — Habit-Building App
+## 2. GIClaw — Visual AI Agent for Genshin Impact (原神视觉AI代理)
+
+- URL: https://giclaw.cn
+- Product page: https://caterpi11ar.com/products/giclaw
+- Category: Game Application
+- Status: Live
+
+### Description
+GIClaw (Genshin Impact Claw) is an open-source visual AI agent that automates repetitive daily tasks in Genshin Impact through cloud gaming. Instead of hardcoded coordinates or selectors, GIClaw uses vision-capable AI models to understand game screenshots and decide actions autonomously. It handles login, Welkin Moon claims, mail collection, and more — all without requiring a local game client. Define new skills by writing a Markdown file, no code required. Inspired by OpenClaw.
+
+### Features
+- Vision AI-driven game automation
+- File-driven Markdown skill system
+- Multi-model support (Gemini, OpenAI, Doubao)
+- Cloud gaming optimized — no local client needed
+- Daemon mode with TUI dashboard
+- Open source & extensible
+
+### Tech Stack
+TypeScript, Node.js, Playwright, Gemini API
+
+---
+
+## 3. Dentic — Habit-Building App
 
 - URL: https://github.com/caterpi11ar/dentic
 - Product page: https://caterpi11ar.com/products/dentic
@@ -50,7 +73,7 @@ React Native, TypeScript, Expo
 
 ---
 
-## 3. Viper — TypeScript Config Library
+## 4. Viper — TypeScript Config Library
 
 - URL: https://viper.caterpi11ar.com/
 - Product page: https://caterpi11ar.com/products/viper
@@ -73,7 +96,7 @@ TypeScript, Zod, JSON5, Node.js
 
 ---
 
-## 4. WeChat Chat Generator (微信聊天截图生成器)
+## 5. WeChat Chat Generator (微信聊天截图生成器)
 
 - URL: https://wechat.caterpi11ar.com/
 - Product page: https://caterpi11ar.com/products/wechat-chat-generator
@@ -96,7 +119,7 @@ Next.js, React, Canvas API, Tailwind CSS
 
 ---
 
-## 5. Lark Imagine Robot (飞书AI绘图机器人)
+## 6. Lark Imagine Robot (飞书AI绘图机器人)
 
 - URL: https://github.com/caterpi11ar/lark-imagine-robot
 - Product page: https://caterpi11ar.com/products/lark-imagine-robot
@@ -119,7 +142,7 @@ Node.js, Lark SDK, OpenAI API, TypeScript
 
 ---
 
-## 6. SRI Calculator — Sexual Repression Index
+## 7. SRI Calculator — Sexual Repression Index
 
 - URL: https://sexual.caterpi11ar.com/
 - Product page: https://caterpi11ar.com/products/sri-calculator
@@ -142,7 +165,7 @@ Next.js, React, Tailwind CSS, TypeScript
 
 ---
 
-## 7. AI System Prompts Playground
+## 8. AI System Prompts Playground
 
 - URL: https://ai.caterpi11ar.com/
 - Product page: https://caterpi11ar.com/products/ai-system-prompts
@@ -168,7 +191,7 @@ Next.js, React, MDX, Tailwind CSS
 ## FAQ
 
 ### What is Caterpi11ar AI?
-Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.
+Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), GIClaw (Genshin Impact visual AI agent), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.
 
 ### What is Locusify?
 Locusify is a smart travel tool that automatically generates visual route maps and highlight vlogs from your travel photos. Upload your photos and Locusify extracts GPS data to reconstruct your journey on an interactive map.

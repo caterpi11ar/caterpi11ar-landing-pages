@@ -43,6 +43,30 @@ export const products: Product[] = [
     span: "col-span-2 row-span-2",
   },
   {
+    slug: "giclaw",
+    title: "GIClaw",
+    tagline: "Gaming AI Agent",
+    description:
+      "LLM-driven Genshin Impact agent — automates daily tasks via cloud gaming with visual AI.",
+    longDescription:
+      "GIClaw (Genshin Impact Claw) is an open-source visual AI agent that automates repetitive daily tasks in Genshin Impact through cloud gaming. Instead of hardcoded coordinates or selectors, GIClaw uses vision-capable AI models to understand game screenshots and decide actions autonomously. It handles login, Welkin Moon claims, mail collection, and more — all without requiring a local game client. Define new skills by writing a Markdown file, no code required. Inspired by OpenClaw.",
+    url: "https://giclaw.cn",
+    category: "GameApplication",
+    features: [
+      "Vision AI-driven game automation",
+      "File-driven Markdown skill system",
+      "Multi-model support (Gemini, OpenAI, Doubao)",
+      "Cloud gaming optimized — no local client",
+      "Daemon mode with TUI dashboard",
+      "Open source & extensible",
+    ],
+    techStack: ["TypeScript", "Node.js", "Playwright", "Gemini API"],
+    keywords:
+      "genshin impact agent, AI game agent, cloud gaming automation, 原神自动化, giclaw, visual AI agent",
+    status: "live",
+    span: "col-span-1 row-span-1",
+  },
+  {
     slug: "dentic",
     title: "Dentic",
     tagline: "Health & Habits",

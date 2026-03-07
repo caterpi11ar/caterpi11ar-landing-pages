@@ -26,12 +26,13 @@ export const metadata: Metadata = {
     template: "%s | CATERPI11AR",
   },
   description:
-    "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more. From idea to execution, we ship what matters.",
+    "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, GIClaw for Genshin Impact automation, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more. From idea to execution, we ship what matters.",
   keywords: [
     "Caterpi11ar AI",
     "AI products",
     "Locusify travel app",
     "smart travel route map",
+    "GIClaw Genshin Impact agent",
     "Dentic habit app",
     "Viper TypeScript config library",
     "WeChat chat screenshot generator",
@@ -62,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "CATERPI11AR",
     title: "CATERPI11AR — AI That Evolves",
     description:
-      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more. From idea to execution, we ship what matters.",
+      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, GIClaw for Genshin Impact automation, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more. From idea to execution, we ship what matters.",
     images: [
       {
         url: "/caterpi11ar.jpg",
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CATERPI11AR — AI That Evolves",
     description:
-      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more.",
+      "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, GIClaw for Genshin Impact automation, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more.",
     images: ["/caterpi11ar.jpg"],
   },
   icons: {
@@ -111,7 +112,7 @@ export default function RootLayout({
               url: "https://caterpi11ar.com",
               logo: "https://caterpi11ar.com/caterpi11ar.jpg",
               description:
-                "Caterpi11ar AI builds intelligent products that adapt, evolve, and deliver real value — including Locusify (smart travel), Dentic (habit building), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
+                "Caterpi11ar AI builds intelligent products that adapt, evolve, and deliver real value — including Locusify (smart travel), GIClaw (Genshin Impact AI agent), Dentic (habit building), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
               email: "daiqin1046@gmail.com",
               foundingDate: "2025",
               founder: {
@@ -135,7 +136,7 @@ export default function RootLayout({
               datePublished: "2025-10-01",
               dateModified: "2026-03-01",
               description:
-                "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more.",
+                "Caterpi11ar AI builds products that solve real problems: Locusify for smart travel, GIClaw for Genshin Impact automation, Dentic for habit building, Viper TypeScript library, WeChat chat generator, AI System Prompts collection, and more.",
               publisher: {
                 "@type": "Organization",
                 name: "Caterpi11ar AI",
@@ -176,7 +177,7 @@ export default function RootLayout({
                   name: "What is Caterpi11ar AI?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
+                    text: "Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), GIClaw (Genshin Impact visual AI agent), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
                   },
                 },
                 {
@@ -224,7 +225,7 @@ export default function RootLayout({
                   name: "Caterpi11ar AI 是什么？",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Caterpi11ar AI 是一个 AI 产品工作室，专注于构建智能工具、机器人和开源库。旗下产品包括：Locusify（智能旅行路线图生成器）、Dentic（习惯养成应用）、Viper（TypeScript 配置库）、微信聊天截图生成器、飞书 AI 绘图机器人、SRI 评估工具和 AI System Prompts Playground（AI 编程工具系统提示词合集）。",
+                    text: "Caterpi11ar AI 是一个 AI 产品工作室，专注于构建智能工具、机器人和开源库。旗下产品包括：Locusify（智能旅行路线图生成器）、GIClaw（原神视觉AI代理）、Dentic（习惯养成应用）、Viper（TypeScript 配置库）、微信聊天截图生成器、飞书 AI 绘图机器人、SRI 评估工具和 AI System Prompts Playground（AI 编程工具系统提示词合集）。",
                   },
                 },
                 {

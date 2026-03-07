@@ -10,6 +10,13 @@ gsap.registerPlugin(ScrollTrigger)
 
 const signals = [
   {
+    date: "2026.03",
+    isoDate: "2026-03",
+    title: "GIClaw",
+    slug: "giclaw",
+    note: "LLM-driven Genshin Impact agent launched — automates daily tasks via cloud gaming with visual AI.",
+  },
+  {
     date: "2026.02",
     isoDate: "2026-02",
     title: "Dentic",
