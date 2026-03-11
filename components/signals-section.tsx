@@ -28,7 +28,7 @@ const signals = [
     isoDate: "2026-02",
     title: "Locusify",
     slug: "locusify",
-    note: "Smart travel tool launched — upload photos to auto-generate route maps and highlight vlogs.",
+    note: "Privacy-first travel app launched — turns GPS photos into interactive maps and animated journey replays. 100% on-device.",
   },
   {
     date: "2026.01",

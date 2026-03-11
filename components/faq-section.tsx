@@ -12,13 +12,13 @@ const faqs = [
     id: "what-is-caterpi11ar",
     question: "What is Caterpi11ar AI?",
     answer:
-      "Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
+      "Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (privacy-first photo map & journey replay app), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
   },
   {
     question: "What is Locusify?",
     id: "what-is-locusify",
     answer:
-      "Locusify is a smart travel tool that automatically generates visual route maps and highlight vlogs from your travel photos. Upload your photos and Locusify extracts GPS data to reconstruct your journey on an interactive map.",
+      "Locusify is a privacy-first travel app that transforms GPS photos into interactive route maps and animated journey replays. All processing happens 100% on-device — no server uploads, no data collection. Close the app and data is gone.",
   },
   {
     id: "what-is-viper",

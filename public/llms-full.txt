@@ -4,22 +4,22 @@
 
 ---
 
-## 1. Locusify — Smart Travel Route Maps
+## 1. Locusify — Photo Maps & Journey Replay
 
-- URL: https://locusify.caterpi11ar.com/
+- URL: https://locusify.cn
 - Product page: https://caterpi11ar.com/products/locusify
 - Category: Travel Application
 - Status: Live
 
 ### Description
-Locusify is a smart travel tool that lets you upload photos to auto-generate visual route maps and smooth highlight vlogs. It automatically extracts GPS data and timestamps from photos to reconstruct your journey on an interactive map. Whether you're documenting a weekend getaway or a months-long backpacking trip, Locusify turns your photo collection into a beautiful, shareable travel story.
+Locusify is a privacy-first travel app that transforms GPS photos into interactive route maps and animated journey replays. Upload your travel photos and Locusify automatically extracts GPS coordinates, pins your footprints on an interactive map, and replays your complete journey with animations. All processing happens 100% on-device — no server uploads, no data collection. Close the app and data is gone.
 
 ### Features
-- Auto-extract GPS data from photos
-- Interactive route map generation
-- Highlight vlog creation
-- Timeline-based journey reconstruction
-- Shareable travel stories
+- GPS photo location extraction
+- Animated journey replay
+- Video export & sharing
+- 100% on-device processing
+- Photo clustering on map
 - Multi-format photo support
 
 ### Tech Stack
@@ -191,10 +191,10 @@ Next.js, React, MDX, Tailwind CSS
 ## FAQ
 
 ### What is Caterpi11ar AI?
-Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (smart travel route generator), GIClaw (Genshin Impact visual AI agent), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.
+Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (privacy-first photo map & journey replay app), GIClaw (Genshin Impact visual AI agent), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.
 
 ### What is Locusify?
-Locusify is a smart travel tool that automatically generates visual route maps and highlight vlogs from your travel photos. Upload your photos and Locusify extracts GPS data to reconstruct your journey on an interactive map.
+Locusify is a privacy-first travel app that transforms GPS photos into interactive route maps and animated journey replays. All processing happens 100% on-device — no server uploads, no data collection. Close the app and data is gone.
 
 ### What is Viper TypeScript library?
 Viper is a minimal TypeScript configuration library inspired by Go's Viper. It provides type-safe config management using Zod for validation and JSON5 for flexible config files, making it easy to manage environment-specific configurations in Node.js applications.

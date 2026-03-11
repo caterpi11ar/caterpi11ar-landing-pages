@@ -4,7 +4,7 @@
 
 ## Products
 
-- [Locusify](https://locusify.caterpi11ar.com/): Smart travel tool that auto-generates visual route maps and highlight vlogs from photos. Extracts GPS data and timestamps to reconstruct your journey on an interactive map.
+- [Locusify](https://locusify.cn): Privacy-first travel app that turns GPS photos into interactive route maps and animated journey replays. 100% on-device processing — no server uploads, no data collection.
 - [GIClaw](https://giclaw.cn): LLM-driven Genshin Impact agent that automates daily tasks via cloud gaming with visual AI. Uses vision models to understand game screenshots — no hardcoded coordinates. (原神视觉AI代理)
 - [Dentic](https://github.com/caterpi11ar/dentic): Habit-building app designed to help users develop a consistent, lifelong brushing routine using scientifically-backed habit formation techniques.
 - [Viper](https://viper.caterpi11ar.com/): Minimal Viper-inspired configuration library for TypeScript. Type-safe config management with Zod validation and JSON5 support for Node.js applications.
