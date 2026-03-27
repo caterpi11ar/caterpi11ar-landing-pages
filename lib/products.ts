@@ -43,6 +43,30 @@ export const products: Product[] = [
     span: "col-span-2 row-span-2",
   },
   {
+    slug: "cc-notify",
+    title: "CC Notify",
+    tagline: "AI CLI Notification Manager",
+    description:
+      "Cross-platform notification manager for AI CLI tools with hooks, multi-channel routing, and standalone CLI delivery.",
+    longDescription:
+      "CC Notify is an open-source notification manager for AI CLI tools like Claude Code, Codex, and Gemini CLI. It captures long-running task events through hooks and routes them to the channels you actually use, including native notifications, Slack, Discord, Telegram, Feishu webhooks, sound, voice, and tray badges. Built with Tauri and Rust, it ships with a standalone cc-notify CLI for headless and SSH workflows while sharing the same local SQLite-backed configuration.",
+    url: "https://github.com/caterpi11ar/cc-notify",
+    category: "DeveloperApplication",
+    features: [
+      "Hook integration for Claude Code, Codex, and Gemini CLI",
+      "Event-based routing to multi-channel notifications",
+      "Built-in webhook templates including Feishu/Lark",
+      "Custom rules with keyword, regex, and file-change triggers",
+      "Standalone cc-notify CLI for headless and SSH workflows",
+      "Cross-platform desktop app with local SQLite storage",
+    ],
+    techStack: ["Tauri 2", "React", "TypeScript", "Rust", "SQLite"],
+    keywords:
+      "ai cli notification manager, claude code hooks, codex hooks, gemini cli hooks, tauri notifier, cc-notify",
+    status: "live",
+    span: "col-span-1 row-span-1",
+  },
+  {
     slug: "giclaw",
     title: "GIClaw",
     tagline: "Gaming AI Agent",
