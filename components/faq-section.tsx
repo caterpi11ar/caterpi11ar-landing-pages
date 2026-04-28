@@ -12,7 +12,7 @@ const faqs = [
     id: "what-is-caterpi11ar",
     question: "What is Caterpi11ar AI?",
     answer:
-      "Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. Our products include Locusify (privacy-first photo map & journey replay app), Dentic (habit-building app), Viper (TypeScript config library), WeChat Chat Generator, Lark Imagine Robot, SRI Calculator, and AI System Prompts Playground.",
+      "Caterpi11ar AI is a software studio that builds intelligent tools and apps. Our current lineup includes Locusify (privacy-first photo map & journey replay app), Dentic (habit-building app), CC Notify (notification manager for AI CLI tools), LingoBar (macOS menu bar clipboard translator), and WeChat Chat Generator.",
   },
   {
     question: "What is Locusify?",
@@ -21,10 +21,16 @@ const faqs = [
       "Locusify is a privacy-first travel app that transforms GPS photos into interactive route maps and animated journey replays. All processing happens 100% on-device — no server uploads, no data collection. Close the app and data is gone.",
   },
   {
-    id: "what-is-viper",
-    question: "What is Viper TypeScript library?",
+    id: "what-is-cc-notify",
+    question: "What is CC Notify?",
     answer:
-      "Viper is a minimal TypeScript configuration library inspired by Go's Viper. It provides type-safe config management using Zod for validation and JSON5 for flexible config files, making it easy to manage environment-specific configurations in Node.js applications.",
+      "CC Notify is a cross-platform notification manager for AI CLI tools like Claude Code, Codex, and Gemini CLI. It captures long-running task events through hooks and routes them to native notifications, Slack, Discord, Telegram, Feishu, sound, voice, or tray badges. Built with Tauri and Rust, it also ships a standalone CLI for headless and SSH workflows.",
+  },
+  {
+    id: "what-is-lingobar",
+    question: "What is LingoBar?",
+    answer:
+      "LingoBar is a macOS menu bar clipboard translator built with SwiftUI and AppKit. Copy any text and LingoBar translates it instantly, previews the result in the menu bar, and can optionally write the translation back to your clipboard — all with local stats and zero interruption to your workflow.",
   },
   {
     id: "what-is-wechat-gen",
@@ -33,16 +39,10 @@ const faqs = [
       "WeChat Chat Generator is a free online tool for creating realistic WeChat chat screenshots. Customize sender names, messages, and timestamps to generate authentic-looking WeChat conversation images instantly — no app required.",
   },
   {
-    id: "what-is-ai-prompts",
-    question: "What is AI System Prompts Playground?",
-    answer:
-      "A curated collection of 30+ AI coding tools' system prompts — including Claude Code, Cursor, Devin AI, Windsurf, Replit, v0, Perplexity, and more. All searchable and browsable at ai.caterpi11ar.com.",
-  },
-  {
     id: "is-open-source",
     question: "Is Caterpi11ar AI open source?",
     answer:
-      "Yes, several products are open source. Viper (TypeScript config library), Dentic (habit app), and Lark Imagine Robot are all available on GitHub at github.com/caterpi11ar.",
+      "Yes, several products are open source. Dentic (habit app), CC Notify (AI CLI notification manager), and LingoBar (macOS clipboard translator) are all available on GitHub at github.com/caterpi11ar.",
   },
 ]
 

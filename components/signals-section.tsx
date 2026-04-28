@@ -10,11 +10,18 @@ gsap.registerPlugin(ScrollTrigger)
 
 const signals = [
   {
+    date: "2026.04",
+    isoDate: "2026-04",
+    title: "LingoBar",
+    slug: "lingobar",
+    note: "macOS menu bar clipboard translator launched — copy text, get instant translations with zero interruption.",
+  },
+  {
     date: "2026.03",
     isoDate: "2026-03",
-    title: "GIClaw",
-    slug: "giclaw",
-    note: "LLM-driven Genshin Impact agent launched — automates daily tasks via cloud gaming with visual AI.",
+    title: "CC Notify",
+    slug: "cc-notify",
+    note: "Notification manager for AI CLI tools released — hooks, multi-channel routing, and a standalone CLI for headless workflows.",
   },
   {
     date: "2026.02",
@@ -31,32 +38,11 @@ const signals = [
     note: "Privacy-first travel app launched — turns GPS photos into interactive maps and animated journey replays. 100% on-device.",
   },
   {
-    date: "2026.01",
-    isoDate: "2026-01",
-    title: "Viper",
-    slug: "viper",
-    note: "Minimal Viper-inspired TypeScript config library released with Zod and JSON5 support.",
-  },
-  {
-    date: "2025.12",
-    isoDate: "2025-12",
-    title: "SRI Calculator",
-    slug: "sri-calculator",
-    note: "Sexual Repression Index Calculator shipped — a professional mental health assessment tool.",
-  },
-  {
     date: "2025.11",
     isoDate: "2025-11",
     title: "WeChat Chat Gen",
     slug: "wechat-chat-generator",
     note: "Online WeChat chat screenshot generator launched. Realistic and effortless.",
-  },
-  {
-    date: "2025.10",
-    isoDate: "2025-10",
-    title: "Lark Imagine",
-    slug: "lark-imagine-robot",
-    note: "Lark/Feishu bot for AI-powered image generation open-sourced on GitHub.",
   },
 ]
 

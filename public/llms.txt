@@ -1,17 +1,14 @@
 # CATERPI11AR
 
-> Caterpi11ar AI is a software studio that builds intelligent tools, bots, and libraries. We ship products that solve real problems — from smart travel maps to habit trackers to developer utilities. AI that evolves, built to last.
+> Caterpi11ar AI is a software studio that builds intelligent tools and apps. We ship products that solve real problems — from smart travel maps to habit trackers to developer utilities. AI that evolves, built to last.
 
 ## Products
 
 - [Locusify](https://locusify.cn): Privacy-first travel app that turns GPS photos into interactive route maps and animated journey replays. 100% on-device processing — no server uploads, no data collection.
-- [GIClaw](https://giclaw.cn): LLM-driven Genshin Impact agent that automates daily tasks via cloud gaming with visual AI. Uses vision models to understand game screenshots — no hardcoded coordinates. (原神视觉AI代理)
 - [Dentic](https://github.com/caterpi11ar/dentic): Habit-building app designed to help users develop a consistent, lifelong brushing routine using scientifically-backed habit formation techniques.
-- [Viper](https://viper.caterpi11ar.com/): Minimal Viper-inspired configuration library for TypeScript. Type-safe config management with Zod validation and JSON5 support for Node.js applications.
+- [CC Notify](https://github.com/caterpi11ar/cc-notify): Cross-platform notification manager for AI CLI tools (Claude Code, Codex, Gemini CLI). Hooks, multi-channel routing, and a standalone CLI for headless workflows. Built with Tauri, React, and Rust.
+- [LingoBar](https://github.com/caterpi11ar/lingobar): macOS menu bar clipboard translator built with SwiftUI and AppKit. Listens for clipboard changes and delivers instant translations with zero interruption. (剪贴板翻译)
 - [WeChat Chat Generator](https://wechat.caterpi11ar.com/): Free online tool that creates realistic WeChat chat screenshots. Customize sender, messages, and timestamps instantly — no app required. (微信聊天截图生成器)
-- [Lark Imagine Robot](https://github.com/caterpi11ar/lark-imagine-robot): Open-source Lark/Feishu bot for AI-powered image generation and artistic creation. (飞书AI绘图机器人)
-- [SRI Calculator](https://sexual.caterpi11ar.com/): Sexual Repression Index Calculator — a professional mental health assessment tool for measuring and evaluating sexual repression levels.
-- [AI System Prompts Playground](https://ai.caterpi11ar.com/): Curated collection of 30+ AI coding tools' system prompts — Claude Code, Cursor, Devin AI, Windsurf, Replit, v0, Perplexity, and more. Searchable and browsable.
 
 ## Philosophy
 
